@@ -1,15 +1,40 @@
+import emailjs from 'emailjs-com';
+import { useState } from 'react';
 import style from './style.module.css';
 
 const Footer = () => {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const templateParams = {
+            name,
+            email,
+        };
+
+        emailjs
+            .send('service_gcbrtq9', 'template_95xuytv', templateParams, 'DTd55g2RbC3GCNbdQ')
+            .then((response) => {
+                alert('Correo enviado exitosamente', response.status, response.text);
+            })
+            .catch((error) => {
+                alert('Error al enviar el correo', error);
+            });
+    };
+
     return (
         <footer className={style.footer_container}>
             <div className={style.subscribe_section}>
                 <h3>Suscríbete</h3>
-                <form>
-                    <input type="text" placeholder="Nombre" required />
-                    <input type="email" placeholder="Email" required />
+                <form onSubmit={handleSubmit}>
+                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nombre" required />
+                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
                     <button type="submit">Suscribirse</button>
                 </form>
+
             </div>
             <div className={style.links_section}>
                 <h3>Links de interés</h3>
