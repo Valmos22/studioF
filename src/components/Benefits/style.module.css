@@ -1,0 +1,24 @@
+.container_benefits {
+    width: -webkit-fill-available;
+    height: 100%;
+    background-color: black;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.container_benefits .benefits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container_benefits .benefits span{
+    color: white !important;
+    font-size: larger !important;
+}
+
+.container_benefits .benefits svg {
+    color: white !important;
+    height: 3rem !important;
+}

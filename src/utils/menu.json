@@ -1,0 +1,40 @@
+{
+    "mainItems": [
+      {
+        "label": "NUEVO",
+        "submenu": ["Ver Todo", "Artículo", "Artículo","Artículo", "Artículo"]
+      },
+      {
+        "label": "JEANS"
+      },
+      {
+        "label": "ROPA",
+        "submenu":  ["Ver Todo", "Artículo", "Artículo","Artículo", "Artículo"]
+      },
+      {
+        "label": "ZAPATOS",
+        "submenu":  ["Ver Todo", "Artículo", "Artículo","Artículo", "Artículo"]
+      },
+      {
+        "label": "ACCESORIOS",
+        "submenu":  ["Ver Todo", "Artículo", "Artículo","Artículo", "Artículo"]
+      },
+      {
+        "label": "BASICOS"
+      },
+      {
+        "label": "COLECCIONES"
+      },
+      {
+        "label": "FIT FINDER"
+      },
+      {
+        "label": "TEN CARD"
+      },
+      {
+        "label": "JEANS",
+        "submenu":  ["Ver Todo", "Artículo", "Artículo","Artículo", "Artículo"]
+      }
+    ]
+  }
+  
