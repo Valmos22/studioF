@@ -57,6 +57,7 @@
 @media (max-width: 768px) {
     .footer_container {
         flex-direction: column;
+        padding: 1rem;
     }
 
     .footer_container > div {

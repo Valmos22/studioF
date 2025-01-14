@@ -22,3 +22,23 @@
     color: white;
 }
 
+.taps:hover {
+    background: #443147 !important;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 767px) {
+    .taps_container {
+      gap: 1rem;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .taps_container {
+        gap: 1rem;
+      }
+  }
+  
+  @media (min-width: 1025px) {
+    /* Estilos para PCs */
+  }

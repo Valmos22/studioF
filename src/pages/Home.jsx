@@ -10,7 +10,6 @@ import Taps from "../components/Taps/Taps"
 const Home = () => {
     return (
         <>
-            {/* <SwiperCont /> */}
             <NavBar />
             <Banner />
             <Taps />

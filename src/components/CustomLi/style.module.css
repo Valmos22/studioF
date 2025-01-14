@@ -19,3 +19,9 @@
     border-color: black !important;
     font-size: small;
 }
+
+@media (max-width: 767px) {
+    .secondaryNav_label {
+      display: none;
+    }
+  }

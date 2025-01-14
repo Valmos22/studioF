@@ -42,6 +42,12 @@ const NavBar = () => {
 
             {isOpen && (
                 <div className={style.dropdown_menu}>
+                    <div className={style.container_menu_items_dos}>
+                        <div className={style.menu_items_dos}>
+                            MUJER | HOMBRE
+                        </div>
+                        <div className={style.cerrar} onClick={() => setIsOpen(!isOpen)}>{'✖'}</div>
+                    </div>
                     {menu.mainItems.map((item, index) => (
                         <div key={index} className={style.dropdown_item}>
                             {item.label}
